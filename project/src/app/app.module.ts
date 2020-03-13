@@ -3,16 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartComponent } from './chart/chart.component';
+import {ChartService} from './chart/chart.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ ChartService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
